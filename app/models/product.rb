@@ -17,6 +17,11 @@ class Product < ApplicationRecord
   # end
 
   has_many :orders
+  has_many :category_products
+  has_many :categories, :through => :category_products
+  # def categories
+  #   category_products.map { |category_product| category_product.category }
+  # end
 
   def is_discounted?
     price <= 10
