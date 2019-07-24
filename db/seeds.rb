@@ -1,3 +1,6 @@
+User.create!(name: "Peter", email: "peter@email.com", password: "password")
+User.create!(name: "Test", email: "test@email.com", password: "password")
+
 Supplier.create!(name: "Amazon", email: "amazon@email.com", phone_number: "243222342")
 Supplier.create!(name: "ThinkGeek", email: "thinkgeek@email.com", phone_number: "5432534")
 
